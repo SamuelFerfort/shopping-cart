@@ -15,7 +15,6 @@ function App() {
       .catch((err) => console.error(err));
   }, []);
 
-  console.log(items);
   return (
     <>
       <Header />

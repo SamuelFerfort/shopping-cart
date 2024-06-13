@@ -1,16 +1,19 @@
-import { useOutletContext } from "react-router-dom"
-
+import { useOutletContext } from "react-router-dom";
 export default function Cart() {
+  const { cart, setCart } = useOutletContext();
 
-    const {items, cart} = useOutletContext()
+  console.log(cart);
 
-    
+  const total = cart.reduce((x, item) => x + item.price * item.qty, 0);
+  return (
+    <>
+      <ul>
+        {cart.map((i) => (
+          <li key={i.id}>{i.qty * i.price}$</li>
+        ))}
+      </ul>
 
-    return (
-       <main>
-        
-        
-
-       </main>
-    )
+      <div>{total}</div>
+    </>
+  );
 }

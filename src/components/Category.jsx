@@ -3,7 +3,7 @@ import Card from "./Card";
 
 export default function Category() {
   let { category } = useParams();
-  const { items, setCart } = useOutletContext();
+  const { items, setCart, cart } = useOutletContext();
   console.log(category);
   let filteredItems = items;
 
@@ -19,11 +19,7 @@ export default function Category() {
       <h1>{category === "all" ? "All Items" : category}</h1>
       <div className="shop-content">
         {filteredItems.map((item) => (
-          <Card
-            key={item.id}
-            {...item}
-            setCart={setCart}
-          />
+          <Card key={item.id} {...item} setCart={setCart} cart={cart} />
         ))}
       </div>
     </main>

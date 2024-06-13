@@ -1,16 +1,26 @@
-export default function Card({ id, title, price, image, setCart }) {
+import { useState } from "react";
+
+export default function Card({ id, title, price, image, setCart, cart }) {
+  const [qty, setQty] = useState(1);
+
   function handleCLick() {
-    const item = {
-      title,
-      price,
-      image,
-      id,
-    };
-    
-    setCart((prev) => ({
-      ...prev,
-      item,
-    }));
+    const itemIndex = cart.findIndex((item) => item.id === id);
+    let newCart = [...cart];
+
+    if (itemIndex > -1) {
+      newCart[itemIndex].qty += qty;
+    } else {
+      const newItem = {
+        title,
+        price,
+        image,
+        id,
+        qty,
+      };
+      newCart = [...cart, newItem];
+    }
+
+    setCart(newCart);
   }
 
   return (
@@ -19,7 +29,12 @@ export default function Card({ id, title, price, image, setCart }) {
       <h1>{title}</h1>
       <div>
         <span>{price}$</span>
-        <button onClick={handleCLick}>Add</button>
+        <div className="qty-container">
+          <button onClick={() => setQty(Math.max(1, qty - 1))}>-</button>
+          <span>{qty}</span>
+          <button onClick={() => setQty(qty + 1)}>+</button>
+          <button onClick={handleCLick}>Add to Cart</button>
+        </div>
       </div>
     </article>
   );
