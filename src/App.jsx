@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header cart={cart}/>
       <Outlet context={{items, cart, setCart}}/>
     </>
   );

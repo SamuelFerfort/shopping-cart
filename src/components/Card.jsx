@@ -34,7 +34,7 @@ export default function Card({ id, title, price, image, setCart, cart }) {
   }
 
   return (
-    <article>
+    <article className="card">
       <img src={image} alt={title} />
       <h1>{title}</h1>
       <div>
@@ -43,9 +43,10 @@ export default function Card({ id, title, price, image, setCart, cart }) {
           <button onClick={() => setQty(Math.max(1, qty - 1))}>-</button>
           <span>{qty}</span>
           <button onClick={() => setQty(qty + 1)}>+</button>
-          <button onClick={handleCLick}>Add to Cart</button>
         </div>
       </div>
+
+      <button className="addCart" onClick={handleCLick}>Add to Cart</button>
     </article>
   );
 }

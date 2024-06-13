@@ -38,15 +38,16 @@ export default function CartCard({
     setCart(newCart);
   }
 
-  
-
   return (
-    <article>
-      <img src={image} alt={title} />
-      <h1>{title}</h1>
+    <article className="cartCard">
       <div>
-        <span>{price}</span>
-        <div className="btn-container">
+        <img src={image} alt={title} />
+        <h1>{title}</h1>
+      </div>
+
+      <div className="right-cart-card">
+        <span className="price">{price}$</span>
+        <div className="btn-cart-container">
           <button onClick={handleMinusQty}>-</button>
           <span>{qty}</span>
           <button onClick={handlePlusQty}>+</button>

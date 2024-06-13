@@ -8,14 +8,15 @@ export default function Category() {
 
   if (category === "women") category = "women's clothing";
   if (category === "men") category = "men's clothing";
-
-  if (category && category !== "all") {
+  if (category === "all" || !category) category = "All items";
+  if (category && category !== "All items") {
     filteredItems = items.filter((item) => item.category === category);
+    category = category.charAt(0).toUpperCase() + category.slice(1);
   }
 
   return (
     <main>
-      <h1>{category === "all" ? "All Items" : category}</h1>
+      <h1>{category}</h1>
       <div className="shop-content">
         {filteredItems.map((item) => (
           <Card key={item.id} {...item} setCart={setCart} cart={cart} />
