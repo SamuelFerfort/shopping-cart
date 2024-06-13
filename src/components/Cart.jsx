@@ -1,6 +1,16 @@
+import { useOutletContext } from "react-router-dom"
+
 export default function Cart() {
 
+    const {items, cart} = useOutletContext()
+
+    
+
     return (
-        <h1>Welcome to the cart</h1>
+       <main>
+        
+        
+
+       </main>
     )
 }

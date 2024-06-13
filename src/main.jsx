@@ -7,7 +7,7 @@ import ErrorPage from "./components/ErrorPage.jsx";
 import Landing from "./components/Home.jsx";
 import Shop from "./components/Shop.jsx";
 import Cart from "./components/Cart.jsx";
-
+import Category from "./components/Category.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +22,16 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop />,
+        children: [
+          {
+            index: true,
+            element: <Category category="all" />,
+          },
+          {
+            path: ":category",
+            element: <Category />,
+          },
+        ],
       },
       {
         path: "/cart",
