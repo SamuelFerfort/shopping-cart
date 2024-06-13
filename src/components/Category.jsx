@@ -4,7 +4,6 @@ import Card from "./Card";
 export default function Category() {
   let { category } = useParams();
   const { items, setCart, cart } = useOutletContext();
-  console.log(category);
   let filteredItems = items;
 
   if (category === "women") category = "women's clothing";

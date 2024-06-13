@@ -1,4 +1,14 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
+
+Card.propTypes = {
+  id: PropTypes.number,
+  price: PropTypes.number,
+  title: PropTypes.string,
+  image: PropTypes.string,
+  setCart: PropTypes.func,
+  cart: PropTypes.array,
+};
 
 export default function Card({ id, title, price, image, setCart, cart }) {
   const [qty, setQty] = useState(1);
