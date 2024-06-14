@@ -112,7 +112,7 @@ a:hover::after {
 .shop-container {
   background-color: #f0f2f5;
   display: grid;
-  grid-template-columns: 380px 1fr;
+  grid-template-columns: 370px 1fr;
   height: 100vh;
   > aside {
     padding: 30px 45px;
@@ -130,7 +130,7 @@ a:hover::after {
 }
 .shop-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 280px);
+  grid-template-columns: repeat(auto-fit, 275px);
   gap: 20px;
   padding: 22px;
 }
@@ -138,7 +138,6 @@ a:hover::after {
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  border-radius: 30px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -212,7 +211,6 @@ a:hover::after {
   height: 100px;
   background-color: white;
   justify-content: space-between;
-  border-radius: 20px;
   width: 1200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
