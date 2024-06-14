@@ -256,8 +256,8 @@ a:hover::after {
 .total-card {
   height: 330px;
   width: 360px;
-  background-color: rgb(218, 165, 32);
-  border: 2px solid #000;
+  background: #ffd814;
+  border: 1px solid #fcd200;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   justify-content: center;
   display: flex;
