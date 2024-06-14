@@ -11,6 +11,7 @@ export default function Header({ cart }) {
         <NavLink to="/">Shopping Cart</NavLink>
       </h1>
       <nav>
+        
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active-link" : "")}
