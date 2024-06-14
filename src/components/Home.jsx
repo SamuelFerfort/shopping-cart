@@ -12,8 +12,7 @@ export default function Home() {
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
             tenetur ipsum omnis est tempora velit alias similique placeat id ad
-            tempore voluptates rem, distinctio fugiat quibusdam non provident
-            sequi. Accusamus.
+            tempore voluptates rem.
           </p>
           <Link to="/shop">Link to shop</Link>
         </div>

@@ -7,7 +7,9 @@ Header.propTypes = {
 export default function Header({ cart }) {
   return (
     <header>
-      <h1>Shopping Cart</h1>
+      <h1>
+        <Link to="/">Shopping Cart</Link>
+      </h1>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>

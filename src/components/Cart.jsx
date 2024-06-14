@@ -1,6 +1,8 @@
 import { useOutletContext, Link } from "react-router-dom";
 import CartCard from "./CartCard";
 
+const TAX = 0.1;
+
 export default function Cart() {
   const { cart, setCart } = useOutletContext();
 
@@ -32,11 +34,20 @@ export default function Cart() {
 
       <div className="total">
         <article className="total-card">
-          <span>Total items: {cart.length}</span>
-          <span>Total before tax: {total}$ </span>
-          <span>Tax: 10%</span>
-          <span>Total Price: {(total * 1.1).toFixed(2)}$</span>
-          <button>Buy</button>
+          <h1>Summary</h1>
+          <div>
+            <span>Subtotal:</span>
+            <span className="result">{total}$</span>
+          </div>
+          <div>
+            <span>Tax: </span>
+            <span className="result">{(total * TAX).toFixed(2)}$</span>
+          </div>{" "}
+          <div>
+            <span>Total: </span>
+            <span className="result">{(total * 1.1).toFixed(2)}$</span>
+          </div>
+          <button>Checkout</button>
         </article>
       </div>
     </main>
