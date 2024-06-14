@@ -8,14 +8,24 @@ Card.propTypes = {
   image: PropTypes.string,
   setCart: PropTypes.func,
   cart: PropTypes.array,
+  addItemToCart: PropTypes.func,
 };
 
-export default function Card({ id, title, price, image, setCart, cart }) {
+export default function Card({
+  id,
+  title,
+  price,
+  image,
+  setCart,
+  cart,
+  addItemToCart,
+}) {
   const [qty, setQty] = useState(1);
 
   function handleCLick() {
     const itemIndex = cart.findIndex((item) => item.id === id);
     let newCart = [...cart];
+    addItemToCart();
 
     if (itemIndex > -1) {
       newCart[itemIndex].qty += qty;
@@ -46,7 +56,9 @@ export default function Card({ id, title, price, image, setCart, cart }) {
         </div>
       </div>
 
-      <button className="addCart" onClick={handleCLick}>Add to Cart</button>
+      <button className="addCart" onClick={handleCLick}>
+        Add to Cart
+      </button>
     </article>
   );
 }

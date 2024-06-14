@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
 Header.propTypes = {
@@ -8,15 +8,25 @@ export default function Header({ cart }) {
   return (
     <header>
       <h1>
-        <Link to="/">Shopping Cart</Link>
+        <NavLink to="/">Shopping Cart</NavLink>
       </h1>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/shop">Shop</Link>
-        <Link to="/cart" className="cartHolder">
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/shop"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+          Shop
+        </NavLink>
+        <NavLink to="/cart" className="cartHolder">
           <span className="cartIcon"></span>
           <span>{cart.length}</span>
-        </Link>
+        </NavLink>
       </nav>
     </header>
   );

@@ -2,11 +2,14 @@ import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
-    <div>
-      <h1>Oh no, this route doesn&lsquo;t exist!</h1>
-      <Link to="/">
-        You can go back to the home page by clicking here, though!
-      </Link>
+    <div className="no-items">
+      <h1>404 Not Found!</h1>
+      <span>
+        {" "}
+        <Link to="/" className="shop-link">
+          Home
+        </Link>
+      </span>
     </div>
   );
 };

@@ -1,7 +1,21 @@
 import { useParams, useOutletContext } from "react-router-dom";
 import Card from "./Card";
+import Notification from "./Notification";
+import { useState } from "react";
 
 export default function Category() {
+  const [notificationVisible, setNotificationVisible] = useState(false);
+  const [notificationMessage, setNotificationMessage] = useState("");
+
+  const addItemToCart = () => {
+    setNotificationMessage("Item added to cart");
+    setNotificationVisible(true);
+
+    setTimeout(() => {
+      setNotificationVisible(false);
+    }, 3000);
+  };
+
   let { category } = useParams();
   const { items, setCart, cart } = useOutletContext();
   let filteredItems = items;
@@ -19,9 +33,19 @@ export default function Category() {
       <h1>{category}</h1>
       <div className="shop-content">
         {filteredItems.map((item) => (
-          <Card key={item.id} {...item} setCart={setCart} cart={cart} />
+          <Card
+            key={item.id}
+            {...item}
+            setCart={setCart}
+            cart={cart}
+            addItemToCart={addItemToCart}
+          />
         ))}
       </div>
+      <Notification
+        message={notificationMessage}
+        visible={notificationVisible}
+      />
     </main>
   );
 }
