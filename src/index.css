@@ -51,7 +51,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
   background-color: #f0f2f5;
   > img {
     width: 800px;
@@ -60,9 +59,15 @@ section {
   > div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
     gap: 40px;
     width: 70ch;
+    height: 520px;
     text-align: center;
+    background-color: white;
+    padding: 40px;
 
     > h1 {
       font-size: 5rem;
