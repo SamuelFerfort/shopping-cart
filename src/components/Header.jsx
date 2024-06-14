@@ -8,10 +8,9 @@ export default function Header({ cart }) {
   return (
     <header>
       <h1>
-        <NavLink to="/">Shopping Cart</NavLink>
+        <NavLink to="/">FakeStore</NavLink>
       </h1>
       <nav>
-        
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active-link" : "")}
