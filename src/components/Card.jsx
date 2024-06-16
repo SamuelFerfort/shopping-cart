@@ -47,6 +47,7 @@ export default function Card({
     <article className="card">
       <img src={image} alt={title} />
       <h1>{title}</h1>
+      
       <div>
         <span>{price}$</span>
         <div className="qty-container">
