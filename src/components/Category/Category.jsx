@@ -1,7 +1,9 @@
 import { useParams, useOutletContext } from "react-router-dom";
-import Card from "./Card";
-import Notification from "./Notification";
+import Card from "../Card/Card";
+import Notification from "../Notification";
 import { useState } from "react";
+import styles from "./Category.module.css"
+
 
 export default function Category() {
   const [notificationVisible, setNotificationVisible] = useState(false);
@@ -31,7 +33,7 @@ export default function Category() {
   return (
     <main>
       <h1>{category}</h1>
-      <div className="shop-content">
+      <div className={styles["shop-content"]}>
         {filteredItems.map((item) => (
           <Card
             key={item.id}

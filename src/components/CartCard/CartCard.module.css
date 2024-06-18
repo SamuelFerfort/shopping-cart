@@ -1,0 +1,56 @@
+.cartCard {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: white;
+    justify-content: space-between;
+    width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    > .left {
+        width: 850px;
+        font-size: 18px;
+
+    }
+    >.left > div {
+        width: 40px;
+    }
+    > .left > div > img {
+      width: auto;
+      height: 40px;
+    }
+   
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-size: 23px;
+      > h1 {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .btn-cart-container {
+    width: 80px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 25px;
+    justify-content: center;
+    > button {
+      border: none;
+      background-color: white;
+      font-size: 25px;
+      cursor: pointer;
+    }
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+
+  .price {
+    width: 150px;
+  }
+  

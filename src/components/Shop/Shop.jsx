@@ -1,9 +1,11 @@
 import { NavLink, Outlet, useOutletContext } from "react-router-dom";
+import styles from "./Shop.module.css"
+
 export default function Shop() {
   const { items, setCart, cart } = useOutletContext();
 
   return (
-    <div className="shop-container">
+    <div className={styles["shop-container"]}>
       <aside>
         <NavLink to="all" className={({ isActive }) => isActive ? "active-link" : ""}>All Categories</NavLink>
         <NavLink to="jewelery" className={({ isActive }) => isActive ? "active-link" : ""}>Jewelry</NavLink>
@@ -16,3 +18,5 @@ export default function Shop() {
     </div>
   );
 }
+
+

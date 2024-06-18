@@ -1,12 +1,13 @@
-import img from "../assets/home.jpg";
+import img from "../../assets/home.jpg";
 import { Link } from "react-router-dom";
+import styles from "./Home.module.css"
 
 export default function Home() {
   return (
     <main>
       <section>
         <img src={img} alt="" />
-        <div className="content">
+        <div className={styles.content}>
           <h1>FakeStore</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam

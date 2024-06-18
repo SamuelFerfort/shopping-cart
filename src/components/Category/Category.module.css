@@ -1,0 +1,8 @@
+
+
+  .shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 275px);
+    gap: 20px;
+    padding: 22px;
+  }

@@ -1,0 +1,65 @@
+.cartIcon {
+    background-image: url(../../assets/cart.png);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    + span {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+  }
+
+
+header {
+    display: flex;
+    height: 65px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding-inline: 50px;
+    color: white;
+    > nav > a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+    }
+    > h1 {
+      font-size: 28px;
+    }
+  }
+  
+  nav {
+    display: flex;
+    gap: 50px;
+  
+    > a {
+      font-size: 30px;
+    }
+  }
+
+
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .active-link::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  

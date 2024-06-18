@@ -1,0 +1,21 @@
+.shop-container {
+    background-color: #f0f2f5;
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    height: 100vh;
+    > aside {
+      padding: 30px 45px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: #2f2f2f;
+      font-size: 28px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    > main > h1 {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+  

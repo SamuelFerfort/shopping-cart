@@ -4,10 +4,10 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage.jsx";
-import Landing from "./components/Home.jsx";
-import Shop from "./components/Shop.jsx";
-import Cart from "./components/Cart.jsx";
-import Category from "./components/Category.jsx";
+import Landing from "./components/Home/Home.jsx";
+import Shop from "./components/Shop/Shop.jsx";
+import Cart from "./components/Cart/Cart.jsx";
+import Category from "./components/Category/Category.jsx";
 
 const router = createBrowserRouter([
   {

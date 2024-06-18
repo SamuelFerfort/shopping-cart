@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
-
+import styles from "./Header.module.css"
 Header.propTypes = {
-  cart: PropTypes.number,
+  cart: PropTypes.array,
 };
 export default function Header({ cart }) {
   return (
@@ -23,8 +23,8 @@ export default function Header({ cart }) {
         >
           Shop
         </NavLink>
-        <NavLink to="/cart" className="cartHolder">
-          <span className="cartIcon"></span>
+        <NavLink to="/cart" className={styles.cartHolder}>
+          <span className={styles.cartIcon}></span>
           <span>{cart.length}</span>
         </NavLink>
       </nav>
