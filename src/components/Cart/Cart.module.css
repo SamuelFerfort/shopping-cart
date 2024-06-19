@@ -1,19 +1,22 @@
 .no-items {
     background-color: #f0f2f5;
-    height: 100vh;
+    height: 50vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    justify-content: center;
     text-align: center;
     > span {
       color: white;
       padding: 10px 20px;
       align-self: center;
-      font-size: 30px;
+      font-size: 25px;
       background-color: #000;
     }
-    
+    > p {
+      font-size: large;
+    }
   }
 
 

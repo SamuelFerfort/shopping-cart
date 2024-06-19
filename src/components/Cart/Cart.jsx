@@ -14,11 +14,12 @@ export default function Cart() {
   if (total < 1) {
     return (
       <div className={styles["no-items"]}>
-        <h1>No items in your cart yet!</h1>
+        <h1>Nothing to see here...</h1>
+        <p>Why not do some shopping?</p>
         <span>
           {" "}
           <Link to="/shop" className="shop-link">
-            Shop
+            Go to shop
           </Link>
         </span>
       </div>
