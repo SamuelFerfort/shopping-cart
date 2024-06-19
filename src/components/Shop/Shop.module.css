@@ -11,15 +11,13 @@
     background-color: #2f2f2f;
     font-size: 28px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
     a:hover::after {
       transform: scaleX(1);
       transform-origin: bottom left;
     }
 
-    .active-link::after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
+   
 
     a::after {
       content: "";
@@ -32,7 +30,9 @@
       background-color: white;
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
+     
     }
+   
   }
   > main > h1 {
     margin-top: 20px;

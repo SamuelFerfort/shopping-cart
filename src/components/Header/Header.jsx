@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import styles from "./Header.module.css"
 Header.propTypes = {
@@ -13,20 +13,18 @@ export default function Header({ cart }) {
       <nav>
         <NavLink
           to="/"
-          className={({ isActive }) => (isActive ? "active-link" : "")}
         >
           Home
         </NavLink>
         <NavLink
           to="/shop"
-          className={({ isActive }) => (isActive ? "active-link" : "")}
         >
           Shop
         </NavLink>
-        <NavLink to="/cart" className={styles.cartHolder}>
+        <Link to="/cart" className={styles.cartHolder}>
           <span className={styles.cartIcon}></span>
           <span>{cart.length}</span>
-        </NavLink>
+        </Link>
       </nav>
     </header>
   );
