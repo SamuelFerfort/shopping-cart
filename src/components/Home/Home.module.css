@@ -4,6 +4,7 @@ section {
     justify-content: center;
     align-items: center;
     background-color: #f0f2f5;
+    margin-top: 75px;
     > img {
       width: 800px;
       height: auto;

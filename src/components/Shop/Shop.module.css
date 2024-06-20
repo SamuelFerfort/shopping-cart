@@ -1,6 +1,5 @@
 .shop-container {
   background-color: #f0f2f5;
-  height: 100vh;
   > aside {
     padding: 30px 45px;
     display: flex;
