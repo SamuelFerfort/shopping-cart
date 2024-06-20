@@ -1,13 +1,14 @@
 .shop-container {
   background-color: #f0f2f5;
-  display: grid;
-  grid-template-columns: 370px 1fr;
   height: 100vh;
   > aside {
     padding: 30px 45px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: fixed;
+    height: 100%;
+    width: 270px;
     background-color: #2f2f2f;
     font-size: 28px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
@@ -16,8 +17,6 @@
       transform: scaleX(1);
       transform-origin: bottom left;
     }
-
-   
 
     a::after {
       content: "";
@@ -30,9 +29,7 @@
       background-color: white;
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
-     
     }
-   
   }
   > main > h1 {
     margin-top: 20px;

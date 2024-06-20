@@ -6,3 +6,9 @@
     gap: 20px;
     padding: 22px;
   }
+
+  main {
+    padding-left: 370px;
+    display: flex;
+    flex-direction: column;
+  }
