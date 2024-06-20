@@ -8,6 +8,10 @@
     margin-bottom: 20px;
   }
 }
+.cartHolder {
+  width: 45px;
+
+}
 
 header {
   display: flex;
@@ -17,6 +21,10 @@ header {
   background-color: #000;
   padding-inline: 50px;
   color: white;
+  position: fixed;
+  top: 0;
+  width: 95%;
+  z-index: 1000;
   > nav > a {
     color: white;
     text-decoration: none;

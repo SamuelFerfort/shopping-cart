@@ -23,7 +23,7 @@ export default function Header({ cart }) {
         </NavLink>
         <Link to="/cart" className={styles.cartHolder}>
           <span className={styles.cartIcon}></span>
-          <span>{cart.length}</span>
+          <span>{cart.length > 0 ? cart.length : "" }</span>
         </Link>
       </nav>
     </header>
