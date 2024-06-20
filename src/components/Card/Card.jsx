@@ -57,10 +57,12 @@ export default function Card({
           <button onClick={() => setQty(qty + 1)}>+</button>
         </div>
       </div>
-
+      <div>
       <button className={cardStyles.addCartBtn} onClick={handleCLick}>
         Add to Cart
       </button>
+      </div>
+      
     </article>
   );
 }
