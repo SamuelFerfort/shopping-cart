@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "./CartCard.module.css"
-
+import styles from "./CartCard.module.css";
 
 CartCard.propTypes = {
   qty: PropTypes.number,
@@ -44,8 +43,7 @@ export default function CartCard({
     <article className={styles.cartCard}>
       <div className={styles.left}>
         <div>
-        <img src={image} alt={title} />
-
+          <img src={image} alt={title} />
         </div>
         <h1>{title}</h1>
       </div>
