@@ -7,7 +7,7 @@
     padding: 22px;
   }
 
-  main {
+  .shop-main {
     padding-left: 370px;
     display: flex;
     flex-direction: column;

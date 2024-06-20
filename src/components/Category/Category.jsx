@@ -31,7 +31,7 @@ export default function Category() {
   }
 
   return (
-    <main>
+    <main className={styles["shop-main"]}>
       <h1>{category}</h1>
       <div className={styles["shop-content"]}>
         {filteredItems.map((item) => (
