@@ -39,15 +39,15 @@ export default function Cart() {
           <h1>Summary</h1>
           <div>
             <span>Subtotal:</span>
-            <span className={styles.result}>{total}$</span>
+            <span className={styles.result}>${total}</span>
           </div>
           <div>
             <span>Tax: </span>
-            <span className={styles.result}>{(total * TAX).toFixed(2)}$</span>
+            <span className={styles.result}>${(total * TAX).toFixed(2)}</span>
           </div>{" "}
           <div>
             <span>Total: </span>
-            <span className={styles.result}>{(total * 1.1).toFixed(2)}$</span>
+            <span className={styles.result}>${(total * 1.1).toFixed(2)}</span>
           </div>
           <button>Checkout</button>
         </article>
