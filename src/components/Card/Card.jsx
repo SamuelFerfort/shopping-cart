@@ -51,7 +51,7 @@ export default function Card({
         <h1>{title}</h1>
 
         <div>
-          <span>{price}$</span>
+          <span>${price}</span>
           <div className={cardStyles.qtyContainer}>
             <button onClick={() => setQty(Math.max(1, qty - 1))}>-</button>
             <span>{qty}</span>
