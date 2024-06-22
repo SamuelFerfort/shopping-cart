@@ -34,18 +34,18 @@ export default function Cart() {
         ))}
       </aside>
 
-      <div className={styles.total}>
+      <div className={styles.summary}>
         <article className={styles.totalCard}>
-          <h1>Summary</h1>
-          <div>
+          <h1>Order Summary</h1>
+          <div className={styles.subtotal}>
             <span>Subtotal:</span>
             <span className={styles.result}>${total}</span>
           </div>
-          <div>
+          <div className={styles.tax}>
             <span>Tax: </span>
             <span className={styles.result}>${(total * TAX).toFixed(2)}</span>
           </div>{" "}
-          <div>
+          <div className={styles.total}>
             <span>Total: </span>
             <span className={styles.result}>${(total * 1.1).toFixed(2)}</span>
           </div>
