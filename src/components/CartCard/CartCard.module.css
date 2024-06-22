@@ -32,16 +32,17 @@
   }
 
   .btn-cart-container {
-    width: 80px;
+    width: 65px;
     display: flex;
     gap: 10px;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
     justify-content: center;
     > button {
       border: none;
+      font-weight: bold;
       background-color: white;
-      font-size: 25px;
+      font-size: 20px;
       cursor: pointer;
     }
     border: 1px solid #000;

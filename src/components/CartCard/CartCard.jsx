@@ -49,7 +49,7 @@ export default function CartCard({
       </div>
 
       <div className="right-cart-card">
-        <span className={styles.price}>{price}$</span>
+        <span className={styles.price}>${price}</span>
         <div className={styles["btn-cart-container"]}>
           <button onClick={handleMinusQty}>-</button>
           <span>{qty}</span>
