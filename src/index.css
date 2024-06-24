@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   background-color: #f0f2f5;
   padding-top: 55px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -41,8 +39,11 @@ a {
   transform: translateX(0);
 }
 
-
 .active::after {
   transform: scaleX(1) !important;
   transform-origin: bottom left !important;
+}
+
+.Spinner {
+  padding-top: 50px;
 }

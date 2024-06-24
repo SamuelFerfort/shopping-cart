@@ -2,13 +2,19 @@ import { useParams, useOutletContext } from "react-router-dom";
 import Card from "../Card/Card";
 import Notification from "../Notification";
 import { useState } from "react";
-import styles from "./Category.module.css"
+import styles from "./Category.module.css";
+import PropTypes from "prop-types";
+import Spinner from "./Spinner"
 
+Category.propTypes = {
+  isLoading: PropTypes.bool,
+};
 
 export default function Category() {
   const [notificationVisible, setNotificationVisible] = useState(false);
   const [notificationMessage, setNotificationMessage] = useState("");
 
+  const { isLoading } = useOutletContext();
   const addItemToCart = () => {
     setNotificationMessage("Item added to cart");
     setNotificationVisible(true);
@@ -28,6 +34,11 @@ export default function Category() {
   if (category && category !== "All items") {
     filteredItems = items.filter((item) => item.category === category);
     category = category.charAt(0).toUpperCase() + category.slice(1);
+  }
+  if (isLoading) {
+    return (
+       <Spinner size={60} />
+    );
   }
 
   return (
