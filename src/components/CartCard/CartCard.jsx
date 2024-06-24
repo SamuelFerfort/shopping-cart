@@ -39,6 +39,14 @@ export default function CartCard({
     setCart(newCart);
   }
 
+  function handleDelete() {
+    let newCart = [...cart];
+    const index = cart.findIndex((item) => item.id === id);
+
+    newCart.splice(index, 1);
+    setCart(newCart);
+  }
+
   return (
     <article className={styles.cartCard}>
       <div className={styles.left}>
@@ -55,6 +63,9 @@ export default function CartCard({
           <span>{qty}</span>
           <button onClick={handlePlusQty}>+</button>
         </div>
+        <button className={styles.delete} onClick={handleDelete}>
+          Remove
+        </button>
       </div>
     </article>
   );
