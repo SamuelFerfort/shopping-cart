@@ -1,6 +1,6 @@
 import { useOutletContext, Link } from "react-router-dom";
 import CartCard from "../CartCard/CartCard";
-import styles from "./Cart.module.css"
+import styles from "./Cart.module.css";
 
 const TAX = 0.1;
 
@@ -29,6 +29,14 @@ export default function Cart() {
   return (
     <main className={styles.cart}>
       <aside className={styles["cart-card-container"]}>
+        <div className={styles.header}>
+          <span className={styles.first}>Product</span>
+          <div>
+            <span>Price</span>
+            <span>Quantity</span>
+            <span>Total</span>
+          </div>
+        </div>
         {cart.map((item) => (
           <CartCard key={item.id} {...item} setCart={setCart} cart={cart} />
         ))}

@@ -63,10 +63,9 @@ export default function CartCard({
           <span>{qty}</span>
           <button onClick={handlePlusQty}>+</button>
         </div>
-        <button className={styles.delete} onClick={handleDelete}>
-          Remove
-        </button>
+       <span className={styles.totalPrice}>${(price * qty).toFixed(2)}</span>
       </div>
+      <button className={styles.delete} onClick={handleDelete}>x</button>
     </article>
   );
 }

@@ -1,76 +1,75 @@
 .no-items {
-    background-color: #f0f2f5;
-    height: 50vh;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
-    text-align: center;
-    > span {
-      color: white;
-      padding: 10px 20px;
-      align-self: center;
-      font-size: 25px;
-      background-color: #000;
-    }
-    > p {
-      font-size: large;
-    }
+  background-color: #f0f2f5;
+  height: 50vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  text-align: center;
+  > span {
+    color: white;
+    padding: 10px 20px;
+    align-self: center;
+    font-size: 25px;
+    background-color: #000;
   }
-
-
-  .cart {
-    display: flex;
-    background-color: #f0f2f5;
-    padding: 50px;
-    gap: 100px;
-    justify-content: center;
+  > p {
+    font-size: large;
   }
-  
-  .cart-card-container {
+}
+
+.cart {
+  display: flex;
+  background-color: #f0f2f5;
+  padding: 50px;
+  gap: 100px;
+  justify-content: center;
+}
+
+.cart-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.totalCard {
+  height: 330px;
+  width: 360px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  font-size: 23px;
+  gap: 30px;
+  > div {
     display: flex;
-    flex-direction: column;
-    gap: 25px;
+    width: 92%;
+    justify-content: space-between;
+    align-items: center;
   }
-
-
-  .totalCard {
-    height: 330px;
-    width: 360px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    display: flex;
-    padding: 25px;
-    flex-direction: column;
-    font-size: 23px;
-    gap: 30px;
-    > div {
-      display: flex;
-      width: 92%;
-      justify-content: space-between;
-      align-items: center;
-    }
-    > button {
-      background-color: #000;
-      color: white;
-      border: none;
-      font-size: 30px;
-      align-self: center;
-      padding: 10px 20px;
-      width: 200px;
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.9);
-        cursor: pointer;
-      }
+  > button {
+    background-color: #000;
+    color: white;
+    border: none;
+    font-size: 30px;
+    align-self: center;
+    padding: 10px 20px;
+    width: 200px;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+      cursor: pointer;
     }
   }
-  .result {
-    width: 100px;
-  }
+}
+.result {
+  width: 100px;
+}
 
-.subtotal, .tax {
+.subtotal,
+.tax {
   font-size: 21px;
   border-bottom: 1px solid #666;
   color: #666;
@@ -78,4 +77,17 @@
 
 .total {
   font-size: 25px;
+}
+
+.header {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 49px;
+  color: #666;
+  > div {
+    display: flex;
+    gap: 60px;
+    
+  }
 }
