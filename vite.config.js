@@ -8,9 +8,4 @@ _plugins.unshift(MillionLint.vite());
 
 export default defineConfig({
   plugins: _plugins,
-  test: {
-    globals: true,
-    environment: "jsdom",
-    setupFiles: "./vitest.setup.js",
-  },
 });
