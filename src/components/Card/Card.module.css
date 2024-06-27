@@ -11,6 +11,10 @@
     > img {
       width: auto;
       height: 120px;
+      mask-image: linear-gradient(
+        black 97%,
+        transparent
+      );
     }
     > h1 {
       font-size: 17px;
