@@ -14,7 +14,7 @@ export default function Home() {
             tenetur ipsum omnis est tempora velit alias similique placeat id ad
             tempore voluptates rem.
           </p>
-          <Link to="/shop" className="home-link">Link to shop</Link>
+          <Link to="/shop" className="home-link">Shop</Link>
         </div>
       </section>
      

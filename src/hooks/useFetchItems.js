@@ -19,6 +19,7 @@ const useFetchItems = (URL) => {
 
         setItems(data);
         setLoading(false);
+        
       } catch (err) {
         console.error(`Error fetching items:`, err);
         setError(err.message);
