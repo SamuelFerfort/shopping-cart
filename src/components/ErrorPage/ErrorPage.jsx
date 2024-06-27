@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
+import styles from "./Error.module.css";
 
 const ErrorPage = () => {
   return (
-    <div className="no-items">
+    <div className={styles.notFound}>
       <h1>404 Not Found!</h1>
       <span>
         {" "}
-        <Link to="/" className="shop-link">
+        <Link to="/" >
           Home
         </Link>
       </span>

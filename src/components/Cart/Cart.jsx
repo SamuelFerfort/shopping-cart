@@ -18,9 +18,7 @@ export default function Cart() {
         <p>Why not do some shopping?</p>
         <span>
           {" "}
-          <Link to="/shop" className="shop-link">
-            Go to shop
-          </Link>
+          <Link to="/shop">Go to shop</Link>
         </span>
       </div>
     );
