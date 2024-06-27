@@ -8,6 +8,7 @@
     gap: 10px;
     padding: 40px;
     height: 320px;
+    border: 1px solid lightgrey;
     > img {
       width: auto;
       height: 120px;
