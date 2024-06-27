@@ -42,8 +42,10 @@
   display: flex;
   padding: 25px;
   flex-direction: column;
-  font-size: 23px;
+  font-size: 22px;
   gap: 30px;
+  border: 1px solid lightgray;
+
   > div {
     display: flex;
     width: 92%;
@@ -54,9 +56,9 @@
     background-color: #000;
     color: white;
     border: none;
-    font-size: 30px;
+    font-size: 26px;
     align-self: center;
-    padding: 10px 20px;
+    padding: 9px 15px;
     width: 200px;
     &:hover {
       background-color: rgba(0, 0, 0, 0.9);
@@ -70,13 +72,13 @@
 
 .subtotal,
 .tax {
-  font-size: 21px;
+  font-size: 18px;
   border-bottom: 1px solid #666;
   color: #666;
 }
 
 .total {
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .header {

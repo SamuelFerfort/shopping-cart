@@ -8,6 +8,7 @@
     width: 1200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
+    border: 1px solid lightgray;
     > .left {
         width: 850px;
         font-size: 18px;
